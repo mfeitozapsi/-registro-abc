@@ -1,0 +1,23 @@
+.field { display: flex; flex-direction: column; gap: 0.375rem; }
+
+.field__label { font-weight: 600; color: var(--texto-forte); }
+
+.field__control {
+  width: 100%;
+  min-height: 3.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--fundo);
+  color: var(--texto-forte);
+  border: 2px solid var(--borda);
+  border-radius: var(--raio-cartao);
+  font: inherit; /* 17px: evita zoom automático no iPhone */
+  color-scheme: light;
+}
+
+.field__control:focus { border-color: var(--apoio); }
+
+.field__control--area {
+  min-height: 12rem;
+  line-height: 1.6;
+  resize: vertical;
+}

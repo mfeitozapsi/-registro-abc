@@ -1,0 +1,4 @@
+.progress { display: flex; flex-direction: column; gap: var(--espaco-1); }
+.progress__label { font-size: 0.9375rem; font-weight: 600; color: var(--texto-forte); }
+.progress__track { height: 0.5rem; background: var(--borda); border-radius: var(--raio-botao); overflow: hidden; }
+.progress__fill { height: 100%; background: var(--acao); border-radius: var(--raio-botao); }

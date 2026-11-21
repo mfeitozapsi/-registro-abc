@@ -1,0 +1,38 @@
+.modal {
+  width: 100%;
+  max-width: var(--largura-max);
+  max-height: 90vh;
+  max-height: 90dvh;
+  margin: auto auto 0; /* colada na base, no celular */
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+  color: var(--texto);
+}
+
+/* Fundo escurecido: Café Profundo translúcido */
+.modal::backdrop { background: rgb(58 42 32 / 0.6); }
+
+.modal__painel {
+  max-height: 90vh;
+  max-height: 90dvh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+  padding: var(--espaco-3) var(--espaco-3) max(var(--espaco-3), env(safe-area-inset-bottom));
+  background: var(--fundo);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-cartao) var(--raio-cartao) 0 0;
+}
+
+.modal__titulo { font-size: 1.5rem; }
+
+@media (min-width: 40rem) {
+  .modal { margin: auto; }
+  .modal__painel { border-radius: var(--raio-cartao); }
+}
+
+/* Impede a rolagem da página por trás da janela */
+body:has(dialog[open]) { overflow: hidden; }

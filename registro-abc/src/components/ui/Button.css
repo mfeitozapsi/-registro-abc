@@ -1,0 +1,34 @@
+.btn {
+  width: 100%;
+  min-height: 3.5rem; /* alvo de toque confortável */
+  padding: 0.75rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--raio-botao);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--acao);
+  color: var(--acao-texto);
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--texto-forte);
+  border-color: var(--apoio);
+}
+
+.btn:disabled {
+  background: var(--cor-bege);
+  color: var(--texto);
+  border-color: transparent;
+  cursor: not-allowed;
+}
+
+.btn--small {
+  width: auto;
+  min-height: 2.75rem;
+  padding: 0.5rem 1.25rem;
+}

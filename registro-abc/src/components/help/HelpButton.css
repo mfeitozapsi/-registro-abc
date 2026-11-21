@@ -1,0 +1,36 @@
+.help-btn {
+  flex: none;
+  width: 2.75rem; /* alvo de toque confortável */
+  height: 2.75rem;
+  padding: 0;
+  background: transparent;
+  color: var(--texto-forte);
+  border: 2px solid var(--apoio);
+  border-radius: 50%;
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.help__bloco {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-left: var(--espaco-2);
+  border-left: 3px solid var(--borda);
+}
+.help__rotulo { font-size: 1rem; font-family: var(--fonte-texto); }
+
+/* Dica: faixa em Creme Claro com borda Taupe, para se destacar sem cores novas */
+.help__dica {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: var(--espaco-2);
+  background: var(--fundo-suave);
+  border: 1px solid var(--borda);
+  border-left: 4px solid var(--apoio);
+  border-radius: var(--raio-cartao);
+}
